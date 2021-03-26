@@ -15,9 +15,9 @@ press = BMP085.BMP085()
 accelerometer.range = adafruit_adxl34x.Range.RANGE_16_G
 
 #Open files for writing
-acc_data = open('/home/pi/AMR-telemetry/'+str(time.time())+' acc', 'w+')
-gyro_data = open('/home/pi/AMR-telemetry/'+str(time.time())+' gyro', 'w+')
-press_data = open('/home/pi/AMR-telemetry/'+str(time.time())+' press', 'w+')
+acc_data = open('/home/pi/AMR-telemetry/data/'+str(time.time())+' acc', 'w+')
+gyro_data = open('/home/pi/AMR-telemetry/data/'+str(time.time())+' gyro', 'w+')
+press_data = open('/home/pi/AMR-telemetry/data/'+str(time.time())+' press', 'w+')
 
 #infinite loop to keep reading sensors and write to file
 while True:
