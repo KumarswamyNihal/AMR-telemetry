@@ -35,7 +35,7 @@ while True:
 
     #TODO: Read pressure sensor data and write to file
     pressure = [0.0, 0.0, 0.0, 0.0]
-    pressure[0] = press.read_read_temperature()
+    pressure[0] = press.read_temperature()
     pressure[1] = press.read_pressure()
     pressure[2] = press.read_altitude()
     pressure[3] = press.read_sealevel_pressure()
@@ -43,5 +43,5 @@ while True:
     press_data.write(str(time.time())+', ')
     press_data.write("%.2f, %.5f, %.5f %.5f" %(pressure[0], pressure[1], pressure[2], pressure[3]))
     press_data.write('\n')
-    
+
     time.sleep(0.05)
