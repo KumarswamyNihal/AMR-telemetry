@@ -41,7 +41,7 @@ while True:
     pressure[3] = press.read_sealevel_pressure()
 
     press_data.write(str(time.time())+', ')
-    press_data.write("%.2f, %.5f, %.5f %.5f" %(pressure[0], pressure[1], pressure[2], pressure[3]))
+    press_data.write("%.2f, %.5f, %.5f, %.5f" %(pressure[0], pressure[1], pressure[2], pressure[3]))
     press_data.write('\n')
 
     time.sleep(0.05)
