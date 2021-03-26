@@ -10,8 +10,8 @@ accelerometer = adafruit_adxl34x.ADXL345(i2c)
 #TODO: set range of accelerometer to 16g
 
 #Open files for writing
-acc_data = open('home/pi/AMR-telemetry'+str(time.time())+' acc', 'w+')
-gyro_data = open('home/pi/AMR-telemetry'+str(time.time())+' gyro', 'w+')
+acc_data = open('/home/pi/AMR-telemetry'+str(time.time())+' acc', 'w+')
+gyro_data = open('/home/pi/AMR-telemetry'+str(time.time())+' gyro', 'w+')
 comp_data = open('/home/pi/AMR-telemetry'+str(time.time())+' comp', 'w+')
 press_data = open('/home/pi/AMR-telemetry'+str(time.time())+' press', 'w+')
 
