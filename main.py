@@ -26,6 +26,9 @@ while True:
     acc_data.write('\n')
 
     #TODO: Read gyroscope data and write to file
-    print(gyroscope.read())
+    gyro = gyroscope.read()
+    gyro_data.write(str(time.time())+', ')
+    gyro_data.write("%.5f, %.5f, %.5f" %(gyro[0], gyro[1], gyro[2]))
+    gyro_data.write('\n')
 
     time.sleep(0.05)
