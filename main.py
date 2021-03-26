@@ -22,7 +22,7 @@ while True:
 
     acceleration = accelerometer.acceleration
     acc_data.write(str(time.time())+', ')
-    acc_data.write("%.5f, %.5f, %.5f" %(str(acceleration[0]), str(acceleration[1]), str(acceleration[2])))
+    acc_data.write("%.5f, %.5f, %.5f" %(acceleration[0], acceleration[1], acceleration[2]))
     acc_data.write('\n')
 
     #TODO: Read gyroscope data and write to file
